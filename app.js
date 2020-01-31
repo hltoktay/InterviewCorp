@@ -85,6 +85,11 @@ app.get("/register", (req, res) => {
   res.render("users/register");
 });
 
+// Terms and Condition Page
+app.get("/terms_of_service", (req, res) => {
+  res.render("terms");
+});
+
 // All questions Page
 app.get("/all_questions", (req, res) => {
   FirstStep.find({}).then(first_steps => {
