@@ -1,0 +1,131 @@
+{{#each errors}}
+<div class="alert alert-danger">
+    {{text}}
+</div>
+{{else}}
+
+
+{{/each}}
+<div class="container mb-5">
+    <h3 class="font-weight-bold pt-4 mb-4">Section One</h3>
+
+    <h5 class="font-weight-bold font-italic mb-5">In this section you have to ask to canditate about personal
+        questions. <br> Do you want to add more question, please contact our support </h5>
+
+    <p class="font-italic"><strong>Ps:</strong> You can create your own questions in this section.</p>
+
+    <form action="/second_questions/add_second" method="post">
+        <!-- Grid row -->
+        <div class="form-group row">
+            <!-- Material input -->
+            <label for="first_question" class="col-sm-2 col-form-label"><strong> Question 1:</strong>
+            </label>
+            <div class="col-sm-10">
+
+                <div class="md-form mt-0">
+                    <input name="first_question" type="text" id="form1" class="form-control" placeholder="Tell me about yourself?"
+                        required>
+
+                </div>
+            </div>
+        </div>
+        <!-- Grid row -->
+
+        {{!-- <div class="md-form">
+            <textarea id="textarea-char-counter" class="form-control md-textarea" length="120" rows="3"></textarea>
+            <label for="textarea-char-counter">Your Answer Here</label>
+        </div> --}}
+
+        <!-- Grid row -->
+        <div class="form-group row">
+            <!-- Material input -->
+            <label for="second_question" class="col-sm-2 col-form-label"><strong> Question 2:</strong></label>
+            <div class="col-sm-10">
+                <div class="md-form mt-0">
+                    <input name="second_question" type="text" id="form1" class="form-control" placeholder="Characterize yourself in one sentence"
+                        required>
+
+                </div>
+            </div>
+        </div>
+        <!-- Grid row -->
+
+
+
+        {{!-- <div class="md-form">
+            <textarea id="textarea-char-counter" class="form-control md-textarea" length="120" rows="3"></textarea>
+            <label for="textarea-char-counter">Your Answer Here</label>
+        </div> --}}
+
+        <!-- Grid row -->
+        <div class="form-group row">
+            <!-- Material input -->
+            <label for="third_question" class="col-sm-2 col-form-label"><strong> Question 3:</strong></label>
+            <div class="col-sm-10">
+                <div class="md-form mt-0">
+                    <input name="third_question" type="text" id="form1" class="form-control" placeholder="Where do you see yourself in five years from now?"
+                        required>
+
+                </div>
+            </div>
+        </div>
+        <!-- Grid row -->
+
+
+
+        {{!-- <div class="md-form">
+            <textarea id="textarea-char-counter" class="form-control md-textarea" length="120" rows="3"></textarea>
+            <label for="textarea-char-counter">Your Answer Here</label>
+        </div> --}}
+
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="form-group row">
+            <!-- Material input -->
+            <label for="forth_question" class="col-sm-2 col-form-label"><strong> Question 4:</strong> </label>
+            <div class="col-sm-10">
+                <div class="md-form mt-0">
+                    <input name="forth_question" type="text" id="form1" class="form-control" placeholder="Do you sometimes feel tired in work?"
+                        required>
+
+                </div>
+            </div>
+        </div>
+        <!-- Grid row -->
+
+
+
+        {{!-- <div class="md-form">
+            <textarea id="textarea-char-counter" class="form-control md-textarea" length="120" rows="3"></textarea>
+            <label for="textarea-char-counter">Your Answer Here</label>
+        </div> --}}
+
+        <!-- Grid row -->
+
+        <div class="form-group row d-inline mb-5">
+
+            <div class="col-sm-10 d-inline">
+                <button type="submit" class="btn btn-primary btn-md">Add More Questions</button>
+            </div>
+
+
+            <div class="col-sm-10 d-inline">
+                <button type="submit" class="btn btn-primary btn-md">Save > Next Section</button>
+            </div>
+
+            <div class="col-sm-10 d-inline">
+                <button type="submit" class="btn btn-second btn-md">Home Page</button>
+            </div>
+        </div>
+
+        {{!-- <div class="form-group row ">
+            <div class="col-sm-10 d-inline">
+                <button type="submit" class="btn btn-primary btn-lg">Next Section</button>
+            </div>
+        </div> --}}
+        <!-- Grid row -->
+    </form>
+    <!-- Horizontal material form -->
+
+</div>
