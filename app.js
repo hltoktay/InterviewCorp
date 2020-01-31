@@ -94,7 +94,7 @@ app.get("/all_questions", (req, res) => {
   });
 });
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
   console.log(`Server is running ${port}`);
