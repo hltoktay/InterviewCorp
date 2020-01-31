@@ -60,6 +60,11 @@ app.get("/pricing", (req, res) => {
   res.render("pricing");
 });
 
+// Explorer More Route
+app.get("/explore", (req, res) => {
+  res.render("explore");
+});
+
 // Corparation Route
 app.get("/corparation", (req, res) => {
   res.render("corparation");
