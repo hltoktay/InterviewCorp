@@ -75,6 +75,11 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
+// How work Route
+app.get("/how_work", (req, res) => {
+  res.render("how_work");
+});
+
 // Add first step questions
 app.get("/first_questions/add", (req, res) => {
   res.render("first_questions/add_first");
