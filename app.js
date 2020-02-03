@@ -60,11 +60,6 @@ app.get("/pricing", (req, res) => {
   res.render("pricing");
 });
 
-// Explorer More Route
-app.get("/explore", (req, res) => {
-  res.render("explore");
-});
-
 // Corparation Route
 app.get("/corparation", (req, res) => {
   res.render("corparation");
@@ -80,10 +75,36 @@ app.get("/how_work", (req, res) => {
   res.render("how_work");
 });
 
-// Add first step questions
-app.get("/first_questions/add", (req, res) => {
-  res.render("first_questions/add_first");
+// Terms and Condition Page
+app.get("/terms_of_service", (req, res) => {
+  res.render("terms");
 });
+
+//////////////    QUESTIONS FORMS ///////////////
+
+// All questions Page
+app.get("/all_questions", (req, res) => {
+  FirstStep.find({}).then(first_steps => {
+    res.render("questions/index", {
+      first_steps: first_steps
+    });
+  });
+});
+
+// Add first step questions
+app.get("/first_step/add", (req, res) => {
+  res.render("steps/first_step/add_first");
+});
+
+// Add Second steps
+
+app.get("/second_step/add", (req, res) => {
+  res.render("steps/second_step/add_second");
+});
+
+//////////// QUESTION FORMS END    ///////////////
+
+////////////   USER AUTH   /////////////////
 
 // User Login
 app.get("/login", (req, res) => {
@@ -95,19 +116,7 @@ app.get("/register", (req, res) => {
   res.render("users/register");
 });
 
-// Terms and Condition Page
-app.get("/terms_of_service", (req, res) => {
-  res.render("terms");
-});
-
-// All questions Page
-app.get("/all_questions", (req, res) => {
-  FirstStep.find({}).then(first_steps => {
-    res.render("questions/index", {
-      first_steps: first_steps
-    });
-  });
-});
+/////////// USER AUTH END    ///////////////
 
 const port = process.env.PORT || 8000;
 

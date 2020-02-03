@@ -146,3 +146,8 @@ h6 {
 .step .step-element:last-child .step-number::before {
   bottom: 1rem;
 }
+
+.card-img-200 {
+  width: 60%;
+  height: 60%;
+}
