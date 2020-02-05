@@ -151,3 +151,13 @@ h6 {
   width: 60%;
   height: 60%;
 }
+
+.check-list {
+  width: 70px;
+  height: 70px;
+}
+
+.video-content {
+  width: 430px;
+  height: 360px;
+}

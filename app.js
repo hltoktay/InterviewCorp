@@ -82,6 +82,11 @@ app.get("/terms_of_service", (req, res) => {
 
 //////////////    QUESTIONS FORMS ///////////////
 
+// Main Page after Login
+app.get("/main", (req, res) => {
+  res.render("main_page");
+});
+
 // All questions Page
 app.get("/all_questions", (req, res) => {
   FirstStep.find({}).then(first_steps => {
