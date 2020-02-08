@@ -1,9 +1,51 @@
-<div class="container p-3">
+<div class="container p-3 custom-model">
     <div class="row">
         <div class="col-sm-6  col-md-12 col-lg-12">
             <h3>Video Record </h3>
-            <p class="font-weight-light">In this section could you explain yourself and what you expect from this
-                company</p>
+            <p class="font-weight-light">In this section We are expecting to answer few question in 3 minute video
+                duration.</p>
+
+            <div class="form-group row">
+                <div class="dropdown">
+                    <div class="select">
+                        <span>Select Question</span>
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        {{> _questions}}
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="dropdown">
+                    <div class="select">
+                        <span>Select Question</span>
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        {{> _questions}}
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="dropdown">
+                    <div class="select">
+                        <span>Select Question</span>
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        {{> _questions}}
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -11,10 +53,9 @@
         <div class="col-sm-6 col-md-12 col-lg-12">
             <h3>Video Screen</h3>
             <div class="video-content">
-                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
+                <button class="btn btn-sm btn-danger" href="">Start
+                    Record</button>
+
             </div>
         </div>
     </div>
